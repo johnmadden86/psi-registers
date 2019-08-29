@@ -355,6 +355,24 @@ def get_all_data(data_type):
     for k in range(1, last_page):
         data.extend(loop.run_until_complete(run(data_type, k, last_page)))
     write_to_json(data, f"data/{data_type.json}-{date.today()}.json")
+    return data
+
+
+def find_no_supervising(p):
+    no_supervising = list(filter(lambda p: p['Supervising Pharmacist'] is None, p))
+    with open ('no-sup.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        for p in no_supervising:
+            writer.writerow([date.today()] + p.values())
+
+
+def time_conv(t):
+    h = int(t // 3600)
+    t %= 3600
+    m = int(t // 60)
+    s = int(t % 60)
+    t = f"{str(h).zfill(2)}:{str(m).zfill(2)}:{str(s).zfill(2)}"
+    return t
 
 
 if __name__ == '__main__':
@@ -362,7 +380,11 @@ if __name__ == '__main__':
     # print(time.perf_counter() - start_time)
     # get_all_data(pharmacist)
     # print(time.perf_counter() - start_time)
-    get_all_data(pharmacy)
-    print(time.perf_counter() - start_time)
+    pharmacies = get_all_data(pharmacy)
+    # find_no_supervising(pharmacies)
+    # find_no_supervising(pharmacies)
+    time_elapsed = time_conv(time.perf_counter() - start_time)
+    print(time_elapsed)
+    # t = time.strftime('%h:%m:%s', t)
     # shutdown()
     exit()
