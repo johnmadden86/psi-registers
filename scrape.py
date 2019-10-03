@@ -21,8 +21,12 @@ assistant = DataType(tag='PublicAssistantId', target='publicassistants', json='a
 pharmacist = DataType(tag='PublicPharmacistId', target='publicpharmacists', json='pharmacist-data')
 pharmacy = DataType(tag='PublicPharmaciesId', target='publicpharmacies', json='pharmacy-data')
 
+today = str(date.today())
 
 start_time = time.perf_counter()
+
+with open('no-sup.json') as json_file:
+    no_sup = json.load(json_file)
 
 
 def shutdown():
@@ -37,6 +41,13 @@ def shutdown():
 
 
 async def fetch_register_page(session, url, payload):
+    """
+    Fetch HTML from one page of the register
+    :param session: open asyncio client session
+    :param url: URL to fetch
+    :param payload: parameters for POST request
+    :return: HTML for that page
+    """
     try:
         async with session.post(url, data=payload) as response:
             return await response.text()
@@ -45,6 +56,13 @@ async def fetch_register_page(session, url, payload):
 
 
 async def fetch_link(session, url, params):
+    """
+    Fetch HTML from one link
+    :param session: open asyncio client session
+    :param url: URL to fetch
+    :param params: parameters for GET request
+    :return: HTML for that link
+    """
     try:
         async with session.get(url, params=params) as response:
             return await response.text()
@@ -53,6 +71,11 @@ async def fetch_link(session, url, params):
 
 
 def html_to_soup(html):
+    """
+    Maps HTML to BeautifulSoup object
+    :param html: HTML to parse
+    :return: BeautiulSoup object
+    """
     try:
         return BeautifulSoup(html, PARSER)
     except Exception as e:
@@ -119,11 +142,21 @@ def get_opening_hours(soup):
         table_data = ntr.find_all('td')
         if not table_data[0].string.isspace():
             day = table_data[0].string
-            opening_time = table_data[1].string
-            closing_time = table_data[2].string
+            opening_time = clean_up_string(table_data[1].string)
+            try:
+                if int(opening_time[:2]) > 15:
+                    opening_time = f"{int(opening_time[:2]) - 12}{opening_time[2:]}"
+            except TypeError:
+                pass
+            closing_time = clean_up_string(table_data[2].string)
+            try:
+                if int(closing_time[:2]) < 12:
+                    closing_time = f"{int(closing_time[:2]) + 12}{closing_time[2:]}"
+            except TypeError:
+                pass
             opening_hours[clean_up_string(day)] = {
-                'Open': clean_up_string(opening_time),
-                'Closed': clean_up_string(closing_time)
+                'Open': opening_time,
+                'Closed': closing_time
             }
     return opening_hours
 
@@ -192,6 +225,11 @@ def is_animal_pharmacy(pharmacy_name):
 
 
 def get_ownership_type(n):
+    """
+    Map the pharmacy ownership type from a digit to a more meaningful string
+    :param n: digit as per register
+    :return: string, if n = 1, 3 or 4
+    """
     ownership_types = {
         '1': 'Private',
         '3': 'Sole Trader',
@@ -204,6 +242,11 @@ def get_ownership_type(n):
 
 
 def count_hours(opening_hours):
+    """
+    Count the total number of hours per week the pharmacy is open
+    :param opening_hours: dict with pharmacy's opening hours
+    :return: number of hours the pharmacy is open as a float
+    """
     weekly_hours = 0
     for day in opening_hours:
         try:
@@ -221,9 +264,14 @@ def count_hours(opening_hours):
 
 
 def check_conditions_attached(value):
+    """
+    Find if conditions are attached to a pharmacist's registratino
+    true where registration number is marked with <strong> red asterisk
+    :param value: the string inside the HTML tag containing a pharmacist's regitration number
+    :return: True or False
+    """
     try:
         value.strong.decompose()
-        # Conditions attached true where registration number is marked with <strong> red asterisk
     except AttributeError:
         return False
     else:
@@ -231,6 +279,11 @@ def check_conditions_attached(value):
 
 
 def yes_no_to_bool(str_):
+    """
+    Map strings 'yes' or 'no' to True or False
+    :param str_: 'yes' or 'no'
+    :return: True or False
+    """
     try:
         y = ['YES', 'Y']
         n = ['NO', 'N']
@@ -249,7 +302,7 @@ def parse_data_from_soup(soup):
     :return: the scraped data object
     """
     # noinspection PyGlobalUndefined
-    global key
+    global key, vacant_since
     scraped_data_object = {}
     hidden = soup.find_all('input')
     for h in hidden:
@@ -272,7 +325,7 @@ def parse_data_from_soup(soup):
         else:
             if key == 'Registration Number:':
                 conditions = check_conditions_attached(value)
-            if key == 'Conditions Attached to Registration:':
+            elif key == 'Conditions Attached to Registration:':
                 value = True if value == 'Yes' else conditions
             value = clean_up_string(value.string)
         finally:
@@ -282,15 +335,29 @@ def parse_data_from_soup(soup):
         scraped_data_object[key] = value
 
     try:
-        hospital = is_hospital_pharmacy(scraped_data_object['Pharmacy Name'])
-        animal = is_animal_pharmacy(scraped_data_object['Pharmacy Name'])
-        ownership_type = get_ownership_type(scraped_data_object['PublicPharmaciesOwnershipType'])
+        scraped_data_object['Hospital'] = is_hospital_pharmacy(scraped_data_object['Pharmacy Name'])
+        scraped_data_object['Animal'] = is_animal_pharmacy(scraped_data_object['Pharmacy Name'])
+        scraped_data_object['PublicPharmaciesOwnershipType'] = \
+            get_ownership_type(scraped_data_object['PublicPharmaciesOwnershipType'])
     except KeyError:
         pass
     else:
-        scraped_data_object['Hospital'] = hospital
-        scraped_data_object['Animal'] = animal
-        scraped_data_object['PublicPharmaciesOwnershipType'] = ownership_type
+        reg_no = str(scraped_data_object['Registration Number'])
+        if scraped_data_object['Supervising Pharmacist'] is None:
+            try:
+                vacant_since = no_sup[reg_no]
+            except KeyError:
+                vacant_since = today
+                no_sup[reg_no] = today
+            finally:
+                scraped_data_object['No Supervising Pharmacist Since'] = vacant_since
+        else:
+            try:
+                del no_sup[reg_no]
+            except KeyError:
+                pass
+            else:
+                print(f"Supervising pharmacist appointed: {reg_no} ")
 
     return scraped_data_object
 
@@ -319,54 +386,94 @@ def write_to_csv(dump_data, file_name):
 
 
 async def run(data_type, page=0, last_pg=None):
+    """
+    1. Gets one page of the register, then...
+    2. Gets data from all the links on that page
+    :param data_type: Pharmacists, Pharmacies, or Assitants
+    :param page: The page number to fetch
+    :param last_pg: The number of pages on the registers
+    :return: A list of dicts of the relevant data
+    """
     tag, target = data_type.tag, data_type.target
+
     async with aiohttp.ClientSession() as session:
+
         post_data = {'target': target, 'Action': 'submit', 'Mode': 'search', 'PageNumber': page}
+
+        # POST request, return one page of register
         html = await fetch_register_page(session, url=BASE_URL, payload=post_data)
-        soup = html_to_soup(html)
-        if last_pg is None:
+
+        soup = html_to_soup(html)  # map to BeautifulSoup object
+
+        if last_pg is None:  # only for first page
             last_pg = get_last_page(soup)
-        ids = get_all_ids_on_page(soup, tag)
+
+        ids = get_all_ids_on_page(soup, tag)  # ids for next set of requests
+
+        # list of params for next set of requests
         params = list(map(lambda id_: {'target': target, 'Mode': 'view', tag: id_}, ids))
 
+        # make the GET requests (asynchronous)
         tasks = [asyncio.ensure_future(fetch_link(session, BASE_URL, params[i])) for i in range(len(params))]
+
+        # tdqm progress bar
         [await r for r in tqdm(asyncio.as_completed(tasks), total=len(tasks),
                                desc=f"Getting items on page {page + 1} of {last_pg}")]
-        html_list = await asyncio.gather(*tasks)
-        soup_list = map(html_to_soup, html_list)
-        scraped_data_objects = map(parse_data_from_soup, soup_list)
 
-        if page == 0:
+        html_list = await asyncio.gather(*tasks)  # gather the results
+        soup_list = map(html_to_soup, html_list)  # mpa to BeautifulSoup object
+        scraped_data_objects = map(parse_data_from_soup, soup_list)  # map relevant data to useful dict
+
+        if page == 0:  # only for first page
             return list(scraped_data_objects), last_pg
 
-        return list(scraped_data_objects)
+        return list(scraped_data_objects)  # list of dicts
 
 
-async def get_remaining_pages(data_type, last_pg):
+async def get_remaining_pages(data_type, last_pg):  # not in use
     tasks = [asyncio.ensure_future(run(data_type, k)) for k in range(1, last_pg)]
     [await r for r in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc=f"Getting pages 2-{last_pg}")]
     return itertools.chain.from_iterable(await asyncio.gather(*tasks))
 
 
 def get_all_data(data_type):
+    """
+    Controls the event loop for the script
+    :param data_type: Pharmacists, Pharmacies, or Assistants
+    :return: all the data gathered
+    :rtype list of dicts
+    """
     loop = asyncio.get_event_loop()
     data, last_page = loop.run_until_complete(run(data_type))  # get first page
-    # data.extend(loop.run_until_complete(get_remaining_pages(data_type, last_page)))
     for k in range(1, last_page):
         data.extend(loop.run_until_complete(run(data_type, k, last_page)))
-    write_to_json(data, f"data/{data_type.json}-{date.today()}.json")
+    write_to_json(data, f"data/{data_type.json}-{today}.json")
     return data
 
 
 def find_no_supervising(p):
-    no_supervising = list(filter(lambda p: p['Supervising Pharmacist'] is None, p))
-    with open ('no-sup.csv', 'a', newline='') as file:
+    """
+    Finds pharmacies where no supervising pharmacist is nominated
+    :param p: list of pharmaices
+    :return: none
+    """
+    no_supervising = list(filter(lambda ph: ph['Supervising Pharmacist'] is None, p))
+    with open('no-sup.csv', 'a', newline='') as file:
         writer = csv.writer(file)
         for p in no_supervising:
-            writer.writerow([date.today()] + p.values())
+            row = [today, p.get('Registration Number'), p.get('Pharmacy Name'), p.get('Pharmacy Address'),
+                   p.get('Pharmacy Owner'), p.get('Superintendent Pharmacist')]
+            writer.writerow(row)
+    with open('no-sup.json', 'w') as file:
+        json.dump(no_sup, file, indent=2)
 
 
 def time_conv(t):
+    """
+    Convet time elapsed to a useful string
+    :param t: time elapsed
+    :return: time as a string
+    """
     h = int(t // 3600)
     t %= 3600
     m = int(t // 60)
@@ -377,14 +484,10 @@ def time_conv(t):
 
 if __name__ == '__main__':
     # get_all_data(assistant)
-    # print(time.perf_counter() - start_time)
     # get_all_data(pharmacist)
-    # print(time.perf_counter() - start_time)
     pharmacies = get_all_data(pharmacy)
-    # find_no_supervising(pharmacies)
-    # find_no_supervising(pharmacies)
+    find_no_supervising(pharmacies)
     time_elapsed = time_conv(time.perf_counter() - start_time)
     print(time_elapsed)
-    # t = time.strftime('%h:%m:%s', t)
     # shutdown()
     exit()
