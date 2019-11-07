@@ -33,7 +33,6 @@ def shutdown():
     """
     Shuts down the computer
     """
-    print('Shutting down computer')
     if platform.system() == "Windows":
         os.system("shutdown -s -t 0")
     else:
@@ -48,11 +47,12 @@ async def fetch_register_page(session, url, payload):
     :param payload: parameters for POST request
     :return: HTML for that page
     """
+    # noinspection PyBroadException
     try:
         async with session.post(url, data=payload) as response:
             return await response.text()
-    except Exception as e:
-        print('fetch', e)
+    except Exception:
+        pass
 
 
 async def fetch_link(session, url, params):
@@ -63,11 +63,12 @@ async def fetch_link(session, url, params):
     :param params: parameters for GET request
     :return: HTML for that link
     """
+    # noinspection PyBroadException
     try:
         async with session.get(url, params=params) as response:
             return await response.text()
-    except Exception as e:
-        print(e)
+    except Exception:
+        pass
 
 
 def html_to_soup(html):
@@ -76,10 +77,11 @@ def html_to_soup(html):
     :param html: HTML to parse
     :return: BeautiulSoup object
     """
+    # noinspection PyBroadException
     try:
         return BeautifulSoup(html, PARSER)
-    except Exception as e:
-        print('Error parsing html', e)
+    except Exception:
+        pass
 
 
 def get_id_no(soup, tag):
@@ -89,6 +91,7 @@ def get_id_no(soup, tag):
     :param tag: {tag} in above, depends on if searching for pharmacists/assistants/pharmacies
     :return: the id number of the object retrieved if the link is clicked
     """
+    # noinspection PyBroadException,DuplicatedCode
     try:
         table_data = soup.find('td')  # 4 table entries, first 2 have links, only one required
         id_containing_link = table_data.a['href']
@@ -97,8 +100,8 @@ def get_id_no(soup, tag):
         while id_containing_link[id_last_index].isdigit():
             id_last_index += 1
         return int(id_containing_link[id_first_index: id_last_index])
-    except Exception as e:
-        print(e)
+    except Exception:
+        pass
 
 
 def get_all_ids_on_page(soup, tag):
@@ -108,12 +111,13 @@ def get_all_ids_on_page(soup, tag):
     :param tag: {tag} in above, depends on if searching for pharmacists/assistants/pharmacies
     :return: a list of ids on the page
     """
+    # noinspection PyBroadException
     try:
         table = soup.table
         table_rows = table.find_all('tr')  # rows of the table containing the id strings
         return [get_id_no(table_rows[j], tag) for j in range(1, len(table_rows))]
-    except Exception as e:
-        print(e)
+    except Exception:
+        pass
 
 
 def get_last_page(soup):
@@ -122,12 +126,13 @@ def get_last_page(soup):
         :param soup: html converted to beautiful soup object for page 1 of the register
         :return: the last page number
     """
+    # noinspection PyBroadException
     try:
         tag = soup.find('div', 'pagination').find('h4')  # Page {x} of {y}
         last_pg = tag.string.split()[-1]
         return int(last_pg)
-    except Exception as e:
-        print(e)
+    except Exception:
+        pass
 
 
 def get_opening_hours(soup):
@@ -161,6 +166,7 @@ def get_opening_hours(soup):
     return opening_hours
 
 
+# noinspection DuplicatedCode
 def clean_up_string(v):
     """
     Remove leading space before commas
@@ -265,9 +271,9 @@ def count_hours(opening_hours):
 
 def check_conditions_attached(value):
     """
-    Find if conditions are attached to a pharmacist's registratino
+    Find if conditions are attached to a pharmacist's registration
     true where registration number is marked with <strong> red asterisk
-    :param value: the string inside the HTML tag containing a pharmacist's regitration number
+    :param value: the string inside the HTML tag containing a pharmacist's registration number
     :return: True or False
     """
     try:
@@ -323,15 +329,14 @@ def parse_data_from_soup(soup):
             opening_hours = get_opening_hours(value)
             value = count_hours(opening_hours)
         else:
-            if key == 'Registration Number:':
+            if key.string == 'Registration Number:':
                 conditions = check_conditions_attached(value)
             elif key == 'Conditions Attached to Registration:':
-                value = True if value == 'Yes' else conditions
+                value = True if value[:3] == 'Yes' else conditions
             value = clean_up_string(value.string)
         finally:
             key = key.string
             key = key.replace(':', '')  # remove colon from key for insertion into dict object
-
         scraped_data_object[key] = value
 
     try:
@@ -357,7 +362,7 @@ def parse_data_from_soup(soup):
             except KeyError:
                 pass
             else:
-                print(f"Supervising pharmacist appointed: {reg_no} ")
+                print(f"Supervising pharmacist appointed: {reg_no}")
 
     return scraped_data_object
 
@@ -389,7 +394,7 @@ async def run(data_type, page=0, last_pg=None):
     """
     1. Gets one page of the register, then...
     2. Gets data from all the links on that page
-    :param data_type: Pharmacists, Pharmacies, or Assitants
+    :param data_type: Pharmacists, Pharmacies, or Assistants
     :param page: The page number to fetch
     :param last_pg: The number of pages on the registers
     :return: A list of dicts of the relevant data
@@ -421,7 +426,7 @@ async def run(data_type, page=0, last_pg=None):
                                desc=f"Getting items on page {page + 1} of {last_pg}")]
 
         html_list = await asyncio.gather(*tasks)  # gather the results
-        soup_list = map(html_to_soup, html_list)  # mpa to BeautifulSoup object
+        soup_list = map(html_to_soup, html_list)  # map to BeautifulSoup object
         scraped_data_objects = map(parse_data_from_soup, soup_list)  # map relevant data to useful dict
 
         if page == 0:  # only for first page
@@ -468,12 +473,14 @@ def find_no_supervising(p):
         json.dump(no_sup, file, indent=2)
 
 
+# noinspection DuplicatedCode
 def time_conv(t):
+    # noinspection DuplicatedCode
     """
-    Convet time elapsed to a useful string
-    :param t: time elapsed
-    :return: time as a string
-    """
+        Convert time elapsed to a useful string
+        :param t: time elapsed
+        :return: time as a string
+        """
     h = int(t // 3600)
     t %= 3600
     m = int(t // 60)
