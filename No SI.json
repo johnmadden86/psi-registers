@@ -1,0 +1,98 @@
+[
+  {
+    "Reg": 5950,
+    "Pharmacy": "Park Pharmacy",
+    "Address": "7 Tyrone Road, Lismore Park, Waterford City, Co Waterford",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6772,
+    "Pharmacy": "Classes Lake  Pharmacy",
+    "Address": "Unit 3, Classes Lake Retail Centre, Bridewood, Ovens, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6852,
+    "Pharmacy": "Blackpool Late Night Pharmacy",
+    "Address": "Unit 4,City Square, Watercourse Rd, Blackpool, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6893,
+    "Pharmacy": "HSQ Pharmacy",
+    "Address": "Unit 1, Block 7 Heuston South Quarter, Military Rd, Kilmainham, D 8",
+    "Date removed": "2021-12-31"
+  },
+  {
+    "Reg": 6918,
+    "Pharmacy": "Riverstick Pharmacy",
+    "Address": "Unit 24, Riverside Grove, Riverstick, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6977,
+    "Pharmacy": "Dan McCarthy's Pharmacy",
+    "Address": "91 Patrick Street, Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 7482,
+    "Pharmacy": "Clarinbridge Pharmacy",
+    "Address": "The Bridge Centre, Clarinbridge, Co Galway",
+    "Date removed": "2022-01-13"
+  },
+  {
+    "Reg": 7623,
+    "Pharmacy": "Johnson Pharmacy",
+    "Address": "Supervalu SC Walkinstown, D 12",
+    "Date removed": "2022-01-17"
+  },
+  {
+    "Reg": 8056,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Kilmallock Business Park, Kilmallock, Co Limeric k",
+    "Date removed": "2021-09-10"
+  },
+  {
+    "Reg": 8198,
+    "Pharmacy": "McCarthy's Pharmacy",
+    "Address": "The Arlington Centre, Link Road,, Droughill, Portarlington, Co Laois",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8224,
+    "Pharmacy": "McCarthy's Pharmacy",
+    "Address": "Unit 1, Castle Court, Carrigtwohill, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8280,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Cahir Primary Care Centre, Cahir, Co Tipperary",
+    "Date removed": "2021-09-10"
+  },
+  {
+    "Reg": 8329,
+    "Pharmacy": "Old Quarter Pharmacy Ltd",
+    "Address": "Ballincollig, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8343,
+    "Pharmacy": "Aidan Walsh Allcare Pharmacy",
+    "Address": "The Medical Hall, Main Street, Ferbane, Co Offaly",
+    "Date removed": "2021-10-23"
+  },
+  {
+    "Reg": 8359,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Croom Primary Care Centre, Croom, Co Limerick",
+    "Date removed": "2021-09-10"
+  },
+  {
+    "Reg": 10000620,
+    "Pharmacy": "Gaynor's Allcare Pharmacy",
+    "Address": "Unit 2, 69 Main Street, Lough Common, Lusk, Co Dublin",
+    "Date removed": "2022-01-27"
+  }
+]

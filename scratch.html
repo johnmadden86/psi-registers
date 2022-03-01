@@ -1,0 +1,3033 @@
+<!DOCTYPE html>
+<html lang="en-US" data-lang="en-US" crm-lang="en-US" crm-lcid="1033" same-site-mode="None">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,&#32;initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script type="text/javascript">
+
+	</script>
+	<title>
+
+		Search Register
+		&nbsp;· The PSI Registration Portal
+	</title>
+
+	<script src="/_resources/getresourcemanager?lang=en-US"></script>
+
+	<script type="text/javascript">
+		// Refresh all powerBI Iframes on Login in one Iframe
+		window.addEventListener('message', function (event) {
+			if (event && event.data && event.data == 'refreshPowerBI') {
+				$("iframe.powerbi").each(function () {
+					this.src = this.src;
+				});
+			}
+		});
+
+		// Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+	</script>
+
+
+
+	<link href="/bootstrap.min.css" rel="stylesheet" />
+
+	<link href="/css/glyphicons-font-awesome-migrate.min.css" rel="stylesheet" />
+
+	<link href="https://content.powerapps.com/resource/powerappsportal/dist/preform.bundle-b2e8a2143a.css"
+		rel="stylesheet" />
+
+
+
+	<!--[if lt IE 9]>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+
+	<!--[if lt IE 10]>
+				<script src="~/js/formdata.js"></script>
+			<![endif]-->
+
+
+
+	<link href="/bootstrap-multiselect.css" rel="stylesheet" />
+	<link href="/theme.css" rel="stylesheet" />
+	<link href="/style.css" rel="stylesheet" />
+
+
+
+
+
+
+	<link href="/css/offlinenotification.css" rel="stylesheet" />
+</head>
+
+<body data-sitemap-state="/search-register/:/" data-dateformat="dd/MM/yyyy" data-timeformat="h:mm tt"
+	data-datetimeformat="dd/MM/yyyy h:mm tt" data-app-path="/"
+	data-ckeditor-basepath="/js/BaseHtmlContentDesigner/Libs/msdyncrm_/libs/ckeditor/"
+	data-case-deflection-url="/_services/search/d78574f9-20c3-4dcc-8d8d-85cf5b7ac141">
+
+	<div id="offlineNotificationBar" style="display: none;">
+		<div id="web"></div>
+		<div id="message">You&#8217;re offline. This is a read only version of the page.</div>
+		<div id="close" onclick="this.parentElement.style.display='none';"></div>
+	</div>
+
+
+	<script type="text/javascript">
+		window["Microsoft"] = window["Microsoft"] || {};
+		window["Microsoft"].Dynamic365 = {
+			Portal: {
+
+				User: {
+					contactId: '',
+					userName: ''
+				},
+
+				version: '9.3.11.12',
+				type: 'StarterPortal',
+				id: '913e151b-0fad-41f8-a211-6d9ec9ebc51a'
+			}
+		}
+	</script>
+
+
+
+
+
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="visible-xs-block col-xs-6">
+					<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+						<div class="xrm-attribute-value">
+							<div class="logo-main"><a href="/"><img src="/logo-white.png" alt="PSI Logo"></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="visible-sm-block col-xs-6 visible-md-block visible-lg-block navbar-brand">
+					<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+						<div class="xrm-attribute-value">
+							<div class="logo-main"><a href="/"><img src="/logo-white.png" alt="PSI Logo"></a></div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" title="Toggle navigation" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="setHeight();">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+
+
+				<div class="navbar-right menu-bar " data-weblinks-maxdepth="2">
+					<ul class="nav navbar-nav weblinks" role="menubar">
+
+
+
+
+
+
+						<li role="none" class="weblink ">
+							<a role="menuitem" aria-label="Home" href="/" title="Home">
+								<span class="fa fa-home" aria-hidden="true"></span>
+								Home
+
+							</a>
+
+
+						</li>
+
+
+
+
+
+
+
+						<li role="none" class="weblink ">
+							<a role="menuitem" aria-label="Search Register" href="/search-register/"
+								title="Search Register">
+								<span class="fa fa-search" aria-hidden="true"></span>
+								Search Register
+
+							</a>
+
+
+						</li>
+
+
+
+
+
+
+
+						<li role="none" class="weblink ">
+							<a role="menuitem" aria-label="Helpful Resources" href="/help/" title="Helpful Resources">
+								<span class="fa  fa-question-circle" aria-hidden="true"></span>
+								Helpful Resources
+
+							</a>
+
+
+						</li>
+
+
+
+
+
+
+
+						<li role="none" class="sign-in-menu-item">
+							<a role="menuitem" aria-label="Sign in"
+								href="/Account/Login/ExternalLogin?returnUrl=%2Fsearch-register%2F%3Ftype%3D%26page%3D6&provider=https%3A%2F%2Fthepsi.b2clogin.com%2Ftfp%2Ffaded073-c114-4c70-983e-f06966e60457%2FB2C_1A_signup_signin%2Fv2.0%2F">
+								<span class="fa fa-sign-in" aria-hidden="true"></span>
+								Sign in
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="navbar-right hidden-xs">
+					<div class="xrm-editable-html&#32;xrm-attribute&#32;no-value" data-languageContext="English">
+						<div class="xrm-attribute-value"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+	<script type="text/javascript">
+		window.onload = function() {
+            if(window.navigator.appName == "Microsoft Internet Explorer" || window.navigator.userAgent.indexOf("Trident") > 0){
+                var searchElement = document.getElementById("search");
+                if (searchElement != null) searchElement.setAttribute("href", "");
+            }
+
+            // Check if Login / Register page
+            var url = window.location.href;
+            if (url.indexOf("/SignIn") >= 0 || url.indexOf("/Register") >= 0){
+                document.body.classList.add("sign-in-page");
+            }
+          };
+
+          function setHeight(){
+           var windowHeight = window.innerHeight - 140;
+           var navbar = document.getElementById("navbar");
+           if (navbar) {
+            navbar.style.maxHeight = windowHeight + "px";
+   }
+          }
+
+          window.addEventListener('resize', function (event) {
+           setHeight();
+          });
+
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#252e39"
+              },
+              "button": {
+                "background": "#14a7d0"
+              }
+            },
+            "theme": "edgeless",
+            "position": "top",
+            "content": {
+              "href": "https://www.thepsi.ie/fns/fns/cookiespolicy.aspx"
+            }
+          });
+	</script>
+
+	<!-- add anti-forgery token-->
+	<div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/preform.bundle-579acbf1c9.js"></script>
+
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/pcf.bundle-b76b953c77.js"></script>
+
+
+
+
+
+	<section class="page_section section-page-header">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12">
+					<div class="logo-home"><img src="/logo-white.png" alt="PSI Logo" /></div>
+						<h1 class="page-heading">Search Register</h1>
+						<h2 class="page-sub-heading">Use the dropdown to find a Pharmacy, Pharmacist or Pharmaceutical
+							Assistant
+
+						</h2>
+
+
+						<style>
+							body {
+								background-color: rgba(0, 140, 149, 0.7);
+								background-image: url(/background.jpg);
+								background-size: 100vw 100vh;
+								background-repeat: no-repeat;
+								background-position: top center;
+							}
+
+							.sign-in-menu-item {
+								display: none !important;
+							}
+						</style>
+
+
+						<script>
+							console.debug("searchType", "");
+        console.debug("searchTypeText", "");
+        console.debug("searchValue", "");
+        console.debug("searchPage", "6");
+						</script>
+
+
+
+						<div class="form-group search-register">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="btn-group bootstrap-select dropdown">
+										<button type="button" class="btn dropdown-toggle btn-grn" data-toggle="dropdown" title="Find Pharmacy" aria-haspopup="true" aria-expanded="false">
+                        <span class="filter-option pull-left" id="search-type" data-value="0">Find Pharmacy</span>
+                        <span class="caret"></span>
+                    </button>
+										<ul class="dropdown-menu" id="search-type-list">
+											<li data-original-index="0" class=' selected '>
+												<a data-value="0" class="dropdown-item">
+													<span class="text">Find Pharmacy</span>
+												</a>
+											</li>
+											<li data-original-index="1" class=''>
+												<a data-value="1" class="dropdown-item">
+													<span class="text">Find Pharmacist</span>
+												</a>
+											</li>
+											<li data-original-index="2" class=''>
+												<a data-value="2" class="dropdown-item">
+													<span class="text">Find Pharmaceutical Assistant</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<input type="text" class="form-control" id="search-value" value="" placeholder="Search by 'registration number', 'name', 'surname', 'location' ...">
+								<div class="input-group-append">
+									<button class="btn btn-primary" type="button" id="search-button">
+                    <span class="fa fa-search" aria-hidden="true"></span> Search
+                </button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<!-- PHARMACY SEARCH -->
+
+
+
+
+	<div class="page-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="search-register-results">
+						<p>
+							<span class="terms">1980</span> results found in
+							<span class="terms"> Pharmacy Register </span> for your search term
+							<span class="terms"></span>
+						</p>
+
+						<div class="row">
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Allcare Pharmacy</h5>
+												<small>46 Main Street
+Arklow, Co. Wicklow</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab0' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab0' data-toggle="tab"
+													href='#contact0' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab0' data-toggle="tab"
+													href='#personnel0' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab0' data-toggle="tab" href='#details0'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent0'>
+											<div class="tab-pane fade pharmdtls active in" id='contact0' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (0402) 32457</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (0402) 31344</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel0' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Tomas Concannon</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Lorna Nash</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Duffy's Medical Hall Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details0' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">7441</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">03/07/2015</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/07/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 145621</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:00 to 18:00
+<br/>Tuesday: 09:00 to 18:00
+<br/>Wednesday: 09:00 to 18:00
+<br/>Thursday: 09:00 to 18:00
+<br/>Friday: 09:00 to 18:00
+<br/>Saturday: 09:00 to 18:00
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Allcare Pharmacy</h5>
+												<small>13 New Street
+Killarney, Co. Kerry</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab1' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab1' data-toggle="tab"
+													href='#contact1' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab1' data-toggle="tab"
+													href='#personnel1' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab1' data-toggle="tab" href='#details1'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent1'>
+											<div class="tab-pane fade pharmdtls active in" id='contact1' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (064) 6634612</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (064) 6634612</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           <a href="www.bradleyspharmacy.ie" target="_blank" title="Allcare Pharmacy">www.bradleyspharmacy.ie</a>
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel1' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Tomas Concannon</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Nuala Griffin</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Willms Pharmacy Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details1' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">7511</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">04/12/2015</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 153125</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:00 to 18:00
+<br/>Tuesday: 09:00 to 18:00
+<br/>Wednesday: 09:00 to 18:00
+<br/>Thursday: 09:00 to 18:00
+<br/>Friday: 09:00 to 18:00
+<br/>Saturday: 09:00 to 18:00
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Allcare Pharmacy</h5>
+												<small>Knightsbridge Nursing Home
+Trim, Co. Meath</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab2' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab2' data-toggle="tab"
+													href='#contact2' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab2' data-toggle="tab"
+													href='#personnel2' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab2' data-toggle="tab" href='#details2'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent2'>
+											<div class="tab-pane fade pharmdtls active in" id='contact2' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (046) 9436585</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (046) 9436581</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel2' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Tomas Concannon</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">N/A</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Pyramach Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details2' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">7986</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">20/12/2018</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 337040</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:00 to 18:00
+<br/>Tuesday: 09:00 to 18:00
+<br/>Wednesday: 09:00 to 18:00
+<br/>Thursday: 09:00 to 18:00
+<br/>Friday: 09:00 to 18:00
+<br/>Saturday: Closed
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Allcare Pharmacy</h5>
+												<small>5 Lower O' Connell Street
+Dublin 1</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab3' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab3' data-toggle="tab"
+													href='#contact3' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab3' data-toggle="tab"
+													href='#personnel3' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab3' data-toggle="tab" href='#details3'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent3'>
+											<div class="tab-pane fade pharmdtls active in" id='contact3' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms"> 01 8748456</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms"> 01 8748478</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel3' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Tomas Concannon</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Siobhan Reilly</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Ballychem Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details3' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">8182</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">11/09/2019</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 30/09/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 486466</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:00 to 18:00
+<br/>Tuesday: 09:00 to 18:00
+<br/>Wednesday: 09:00 to 18:00
+<br/>Thursday: 09:00 to 18:00
+<br/>Friday: 09:00 to 18:00
+<br/>Saturday: 09:00 to 18:00
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Allen Pharmacy</h5>
+												<small>10 Summerhill Parade D1
+Dublin 1</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab4' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab4' data-toggle="tab"
+													href='#contact4' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab4' data-toggle="tab"
+													href='#personnel4' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab4' data-toggle="tab" href='#details4'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent4'>
+											<div class="tab-pane fade pharmdtls active in" id='contact4' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (01) 8555249</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (01) 8349875</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel4' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Elisa McManus</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Elisa McManus</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Allens Pharmacy Ltd</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details4' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">8226</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">13/12/2019</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 114197</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:00 to 17:30
+<br/>Tuesday: 09:00 to 17:30
+<br/>Wednesday: 09:00 to 17:30
+<br/>Thursday: 09:00 to 17:30
+<br/>Friday: 09:00 to 18:00
+<br/>Saturday: 09:00 to 17:00
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Altheir Ltd. Pharmacy</h5>
+												<small>Ballygar Road
+Mountbellew, Co. Galway</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab5' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab5' data-toggle="tab"
+													href='#contact5' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab5' data-toggle="tab"
+													href='#personnel5' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab5' data-toggle="tab" href='#details5'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent5'>
+											<div class="tab-pane fade pharmdtls active in" id='contact5' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (0909) 679990</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (0909) 679989</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel5' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Mary Keady</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Mary Keady</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Altheir Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details5' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">6299</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">01/01/2009</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 312893</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:30 to 18:30
+<br/>Tuesday: 09:30 to 18:30
+<br/>Wednesday: 09:30 to 18:30
+<br/>Thursday: 09:30 to 18:30
+<br/>Friday: 09:30 to 18:30
+<br/>Saturday: 09:30 to 18:30
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Andrew Buckley's totalhealth Pharmacy</h5>
+												<small>5 St. Enda's Drive
+Rathfarnham, Dublin 14</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab6' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab6' data-toggle="tab"
+													href='#contact6' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab6' data-toggle="tab"
+													href='#personnel6' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab6' data-toggle="tab" href='#details6'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent6'>
+											<div class="tab-pane fade pharmdtls active in" id='contact6' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms"> 01 4933433</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms"> 01 4933433</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel6' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Andrew Buckley</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Emma Bourke</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">M & E Pharmacy Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details6' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">7319</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">28/04/2014</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 30/04/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 163866</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 08:30 to 19:30
+<br/>Tuesday: 08:30 to 19:30
+<br/>Wednesday: 08:30 to 19:30
+<br/>Thursday: 08:30 to 19:30
+<br/>Friday: 08:30 to 19:30
+<br/>Saturday: 09:00 to 18:00
+<br/>Sunday: 12:00 to 14:00
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Ann Gray's totalhealth Pharmacy</h5>
+												<small>Unit 3 Castletroy Court
+Castletroy
+Limerick, Co. Limerick</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab7' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab7' data-toggle="tab"
+													href='#contact7' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab7' data-toggle="tab"
+													href='#personnel7' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab7' data-toggle="tab" href='#details7'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent7'>
+											<div class="tab-pane fade pharmdtls active in" id='contact7' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (061) 332210</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (061) 332210</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel7' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Ruth Garahy</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Ruth Garahy</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Acled Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details7' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">8233</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">20/12/2019</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 268904</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:30 to 18:30
+<br/>Tuesday: 09:30 to 18:30
+<br/>Wednesday: 09:30 to 18:30
+<br/>Thursday: 09:30 to 18:30
+<br/>Friday: 09:30 to 18:30
+<br/>Saturday: 09:30 to 18:30
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="col-lg-4 col-md-6 col-sm-6 search-register-result-item">
+								<div class="card">
+									<div class="card-header">
+										<div class="d-flex align-items-center">
+											<span class="avatar-svg">
+                  <svg class="svg-inline fa fa-clinic-medical" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clinic-medical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path></svg>
+                  <!-- <i class="fas fa-clinic-medical fa-2x icon-grn mr-3"></i> -->
+               </span>
+											<div class="avatar-content">
+												<h5>Anna Kelly Chemist</h5>
+												<small>O'Connor's Shopping Centre
+Martyr's Road
+Nenagh, Co. Tipperary</small>
+											</div>
+										</div>
+									</div>
+									<div class="card-body">
+										<ul class="nav nav-tabs" id='myTab8' role="tablist">
+											<li class="nav-item active">
+												<a class="nav-link active" id='contact-tab8' data-toggle="tab"
+													href='#contact8' role="tab" aria-controls="contact"
+													aria-selected="true"><svg class="svg-inline fa fa-list"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+														</path>
+													</svg><!-- <i class="fas fa-list icon-grn"></i> --> Contact</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='personnel-tab8' data-toggle="tab"
+													href='#personnel8' role="tab" aria-controls="personnel"
+													aria-selected="false"><svg
+														class="svg-inline fa fa-users fa-w-20 icon-grn"
+														aria-hidden="true" focusable="false" data-prefix="fas"
+														data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 640 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+														</path>
+													</svg><!-- <i class="fas fa-users icon-grn"></i> --> Personnel</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id='details-tab8' data-toggle="tab" href='#details8'
+													role="tab" aria-controls="details" aria-selected="false"><svg
+														class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg><!-- <i class="fas fa-info-circle icon-grn"></i> -->
+													Details</a>
+											</li>
+										</ul>
+										<div class="tab-content" id='myTabContent8'>
+											<div class="tab-pane fade pharmdtls active in" id='contact8' role="tabpanel"
+												aria-labelledby="contact-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-phone" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="phone" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-phone icon-grn"></i> --> Tel:
+													<span class="srchitms">  (067) 34244</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-fax" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="fax" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-fax icon-grn"></i> --> Fax:
+													<span class="srchitms">  (067) 43444</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-globe" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="globe" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-globe icon-grn"></i> --> Web:
+													<span class="srchitms">
+                           N/A
+                     </span>
+												</p>
+											</div>
+											<div class="tab-pane fade pharmdtls" id='personnel8' role="tabpanel"
+												aria-labelledby="personnel-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Superintendent
+													Pharmacist:
+													<span class="srchitms">Anna Kelly</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Supervising
+													Pharmacist:
+													<span class="srchitms">Julie Ryan</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-user" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="user" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-user fa-sm icon-grn"></i> --> Pharmacy Owner:
+													<span class="srchitms">Amaview Limited</span>
+												</p>
+
+											</div>
+											<div class="tab-pane fade pharmdtls" id='details8' role="tabpanel"
+												aria-labelledby="details-tab">
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> PSI
+													Registration Number:
+													<span class="srchitms">6102</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Date of
+													First Registration by Current Owner:
+													<span class="srchitms">01/01/2009</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-calendar" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="calendar"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 448 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-calendar fa-sm icon-grn"></i> --> Expiry Date
+													of Certificate of Registration:
+													<span class="srchitms"> 31/12/2022</span>
+												</p>
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-info-circle" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="info-circle"
+														role="img" xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 512 512" data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-info-circle fa-sm icon-grn"></i> --> Companies
+													Office Registration No:
+													<span class="srchitms"> 321582</span>
+												</p>
+
+												<p class="srchlbls">
+													<svg class="svg-inline fa fa-clock" aria-hidden="true"
+														focusable="false" data-prefix="fas" data-icon="clock" role="img"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+														data-fa-i2svg="">
+														<path fill="currentColor"
+															d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+														</path>
+													</svg>
+													<!-- <i class="fas fa-clock icon-grn"></i> --> Opening Hours:
+													<span class="srchitms">
+                        <br/>Monday: 09:15 to 18:00
+<br/>Tuesday: 09:15 to 18:00
+<br/>Wednesday: 09:15 to 18:00
+<br/>Thursday: 09:15 to 18:00
+<br/>Friday: 09:15 to 18:00
+<br/>Saturday: 09:15 to 18:00
+<br/>Sunday: Closed
+<br/>
+                     </span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+						<!-- Pagination -->
+
+
+
+
+
+
+
+						<ul class="pagination">
+							<li class="first-page ">
+								<a class="pagination-icon" href="/search-register?type=0&page=1&search="
+									title="First page">
+									&laquo;
+								</a>
+							</li>
+
+							<li class="previous-page ">
+								<a class="pagination-icon" href="/search-register?type=0&page=5&search="
+									title="Previous page">
+									&lsaquo;
+								</a>
+							</li>
+
+
+
+							<li class="page ">
+								<a href="/search-register?type=0&page=1&search=" title="Page 1">
+									1
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=1&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=2&search=" title="Page 2">
+									2
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=2&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=3&search=" title="Page 3">
+									3
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=3&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=4&search=" title="Page 4">
+									4
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=4&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=5&search=" title="Page 5">
+									5
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=5&search=")
+								</script>
+							</li>
+							<li class="page active">
+								<a href="/search-register?type=0&page=6&search=" title="Page 6">
+									6
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=6&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=7&search=" title="Page 7">
+									7
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=7&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=8&search=" title="Page 8">
+									8
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=8&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=9&search=" title="Page 9">
+									9
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=9&search=")
+								</script>
+							</li>
+							<li class="page ">
+								<a href="/search-register?type=0&page=10&search=" title="Page 10">
+									10
+								</a>
+								<script>
+									console.debug("URL", "/?type=0&page=10&search=")
+								</script>
+							</li>
+
+
+
+							<li class="other-pages">
+								<a class="pagination-icon" href="/search-register?type=0&page=11&search="
+									title="Next pages">
+									&hellip;
+								</a>
+							</li>
+
+
+							<li class="next-page ">
+								<a class="pagination-icon" href="/search-register?type=0&page=7&search="
+									title="Next page">
+									&rsaquo;
+								</a>
+							</li>
+
+							<li class="last-page ">
+								<a class="pagination-icon" href="/search-register?type=0&page=220&search="
+									title="Last page">
+									&raquo;
+								</a>
+							</li>
+						</ul>
+						<p class="pagination-description">Page 6 of 220 </p>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+            $(".search-register #search-type-list .dropdown-item").on("click", function(e) {
+                e.preventDefault();
+
+                var typeValue = $(this).data("value");
+                var typeText = $(this).find(".text").text();
+
+                $(".search-register #search-type-list li").removeClass("selected");
+                $(this).closest("li").addClass("selected");
+
+                $(".search-register #search-type").data("value", typeValue);
+                $(".search-register #search-type").text(typeText);
+            });
+
+            $(".search-register #search-value").on('keypress', function (e) {
+                if(e.which === 13)
+                    $(".search-register #search-button").trigger("click");
+            });
+
+            $(".search-register #search-button").on("click", function(e) {
+                e.preventDefault();
+
+                var typeValue = $(".search-register #search-type").data("value");
+                var searchValue = $(".search-register #search-value").val();
+
+                if (
+                    typeValue !== null && typeValue !== undefined && typeValue >= 0
+                    //&& searchValue !== null && searchValue !== undefined && searchValue !== ""
+                ){
+                    if(searchValue !== null && searchValue !== undefined && searchValue !== "")
+                        searchValue = "*" + searchValue + "*";
+
+                    var href = location.protocol + '//' + location.host + location.pathname + '?type=' + typeValue + '&search=' + encodeURI(searchValue);
+                    window.location.href = href;
+                }
+            });
+        });
+	</script>
+
+
+
+
+
+
+
+	<footer role="contentinfo">
+		<div class="footer-top hidden-print">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12 text-left">
+						<div class="about">
+							<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+								<div class="xrm-attribute-value"><img src="/logo-white.png" alt="PSI Logo" class="footer-logo">
+									<p>The Pharmaceutical Society of Ireland (PSI) is a public body established in law
+										to protect the health, safety and wellbeing of patients and the public by
+										regulating pharmacists and pharmacies in Ireland.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 text-left">
+						<div class="contact">
+							<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+								<div class="xrm-attribute-value">
+									<h5 class="text-uppercase">Contact</h5>
+									<ul class="list-unstyled contact-list">
+										<li class="contact-item"><svg aria-hidden="true" focusable="false"
+												data-prefix="fas" data-icon="map-marker-alt" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+												data-fa-i2svg="" class="svg-inline">
+												<path fill="currentColor"
+													d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+												</path>
+											</svg>
+											<!-- <i class="fas fa-map-marker-alt"></i> --> PSI House, Fenian Street,
+											Dublin 2, D02 TD72.</li>
+										<li class="contact-item"><a href="tel:0035312184000" class="contact-link"><svg
+													aria-hidden="true" focusable="false" data-prefix="fas"
+													data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 512 512" data-fa-i2svg="" class="svg-inline">
+													<path fill="currentColor"
+														d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+													</path>
+												</svg>
+												<!-- <i class="fas fa-phone"></i> --> +353(0)1 218 4000</a></li>
+										<li class="contact-item"><a href="tel:1850774734" class="contact-link"><svg
+													aria-hidden="true" focusable="false" data-prefix="fas"
+													data-icon="headset" role="img" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 512 512" data-fa-i2svg="" class="svg-inline">
+													<path fill="currentColor"
+														d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+													</path>
+												</svg>
+												<!-- <i class="fas fa-headset"></i> --> 1850 774 734</a></li>
+										<li class="contact-item"><a href="mailto:info@psi.ie" class="contact-link"><svg
+													aria-hidden="true" focusable="false" data-prefix="fas"
+													data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 512 512" data-fa-i2svg="" class="svg-inline">
+													<path fill="currentColor"
+														d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+													</path>
+												</svg>
+												<!-- <i class="fas fa-envelope"></i> --> info@psi.ie</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12 text-left">
+						<div class="navigation">
+
+
+							<h5 class="text-uppercase text-left">Links</h5>
+
+							<div class="text-left " data-weblinks-maxdepth="1">
+								<ul class="list-unstyled nav-list">
+
+									<li class="nav-item">
+										<a class="nav-link" href="https://www.thepsi.ie/gns/home.aspx"
+											target="_blank">PSI.ie</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="https://www.thepsi.ie/legal.aspx"
+											target="_blank">Terms of Use</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link"
+											href="https://www.thepsi.ie/tns/about-psi/FOI/freedom-of-information.aspx"
+											target="_blank">Freedom of Information</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link"
+											href="https://www.thepsi.ie/tns/about-psi/Data_Protection.aspx"
+											target="_blank">Data Protection</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link"
+											href="https://www.thepsi.ie/tns/about-psi/QualityDevelopment.aspx"
+											target="_blank">PSI Quality Development</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="https://www.thepsi.ie/fns/fns/cookiespolicy.aspx"
+											target="_blank">Cookies Policy</a>
+
+
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link"
+											href="https://www.thepsi.ie/gns/Search-the-Registers/TermsofReferenceSearchtheRegisters.aspx"
+											target="_blank">Terms and Conditions</a>
+
+
+									</li>
+
+								</ul>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom hidden-print">
+			<div class="container">
+				<div class="row">
+					<hr />
+
+					<div class="col-md-8 col-sm-12 col-xs-12 text-left">
+						<div class="copyright">
+							<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+								<div class="xrm-attribute-value">
+									<p>© 2022 <a href="https://www.psi.ie/" class="footer-link" target="_blank">The
+											Pharmaceutical Society of Ireland (PSI)</a>. All rights reserved.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="social">
+							<div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English">
+								<div class="xrm-attribute-value">
+									<ul class="nav">
+										<li class="nav-item">
+											<a class="nav-link" href="https://twitter.com/PSIRegulator" target="_blank">
+												<svg aria-hidden="true" class="svg-inline" data-fa-i2svg=""
+													data-icon="twitter" data-prefix="fab" focusable="false" role="img"
+													viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+														fill="currentColor"></path>
+												</svg>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link"
+												href="https://www.youtube.com/channel/UCHzGl0S3z-ImMgDyvQz0WKw"
+												target="_blank">
+												<svg aria-hidden="true" class="svg-inline" data-fa-i2svg=""
+													data-icon="youtube" data-prefix="fab" focusable="false" role="img"
+													viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+														fill="currentColor"></path>
+												</svg>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link"
+												href="https://ie.linkedin.com/company/psi%E2%80%93pharmacy-regulator"
+												target="_blank">
+												<svg aria-hidden="true" class="svg-inline" data-fa-i2svg=""
+													data-icon="linkedin" data-prefix="fab" focusable="false" role="img"
+													viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"
+														fill="currentColor"></path>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/postpreform.bundle-f4f91a6eb4.js"></script>
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/app.bundle-9965d41631.js"></script>
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/default-1033.bundle-eda4e638fd.js">
+	</script>
+
+
+
+	<div id="loading"></div>
+
+	<script>
+		// Check if is inside a Frame or IFrame
+    if (window.top != window.self){
+        //$(window.frameElement).css("opacity", 1);
+
+        document.body.className += ' ' + 'iframe-body';
+
+        if($(window.frameElement).hasClass("quickform"))
+            document.body.className += ' ' + 'iframe-body-quickform';
+    }
+
+    if (typeof (webFormClientValidate) === 'undefined')
+        function webFormClientValidate() {
+            // Custom client side validation. Method is called by the next/submit button's onclick event.
+            // Must return true or false. Returning false will prevent the form from submitting.
+            return true;
+        }
+
+    if (typeof (entityFormClientValidate) === 'undefined')
+        function entityFormClientValidate() {
+            // Custom client side validation. Method is called by the next/submit button's onclick event.
+            // Must return true or false. Returning false will prevent the form from submitting.
+            return true;
+        }
+
+    // Function to be used .on("input",...) of fields that should only accept number
+    function OnlyInputNumbers(event) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    }
+
+    // WEB ROLES functions: Used to valid web roles assigned to the user
+        var _psiWebRoles = {
+            Administrator: "administrators",
+            AuthenticatedUser: "authenticated users",
+            CancelledPharmacist: "cancelled pharmacist",
+            PSIPortalUserEU: "psi portal user (eu)",
+            PSIPortalUserNational: "psi portal user (national)",
+            RegisteredPharmacist: "registered pharmacist",
+            RegisteredPharmacyAssistant: "registered pharmaceutical assistant",
+            RPBAdministrator: "rpb administrator"
+        };
+
+        var _userWebRoles = [];
+
+
+        function UserHasWebRole(webRole){
+            try {
+                if (
+                    !!webRole && webRole.length > 0
+                    && !!_userWebRoles && _userWebRoles.length > 0
+                    && _userWebRoles.indexOf(webRole) >= 0
+                )
+                    return true;
+                else
+                    return false;
+            } catch (e) {
+                return false;
+            }
+        }
+
+
+    /** LOAD PROFILE PICTURE **/
+        var pictureContent = null;
+
+        // Get User "Profile Picture Base64" content
+        var profilePictureBase64 = '';
+        if (!!profilePictureBase64)
+        {
+            pictureContent = "data:image;base64," + profilePictureBase64;
+        }
+
+        if(pictureContent != null){
+            // Get Sidebar Profile Picture Element
+            var pictureSideElement = null;
+            if($(".well a > img").length > 0)
+            {
+                // Remove unnecessary A element
+                pictureSideElement = $(".well a > img");
+                var parentA = pictureSideElement.parent();
+                parentA.before(pictureSideElement);
+                parentA.remove();
+            }
+            else if($(".well img").length > 0)
+            {
+                pictureSideElement = $(".well img");
+            }
+
+            if (pictureSideElement != null)
+            {
+                // Add picture to element
+                pictureSideElement.attr("src", pictureContent);
+
+                // Correct style
+                pictureSideElement.addClass("profile-picture");
+            }
+        }
+    /** END LOAD PROFILE PICTURE **/
+	</script>
+
+	<!-- Multi-select workaround -->
+	<script type="text/javascript" src="/bootstrap-multiselect.js"></script>
+	<link rel="stylesheet" href="/bootstrap-multiselect.css" type="text/css">
+	<style>
+		.dropdown-menu>.active>a,
+		.dropdown-menu>.active>a:hover,
+		.dropdown-menu>.active>a:focus {
+			color: #333 !important;
+		}
+
+		.open>.btn-default.dropdown-toggle:hover {
+			color: white !important;
+		}
+
+		.open>.btn-default.dropdown-toggle {
+			color: #008C95 !important;
+		}
+	</style>
+
+	<!-- Xrm.Portal.js -->
+	<script type="text/javascript" src="/Xrm.Portal.js"></script>
+	<!-- PSI.Portal.js -->
+	<script type="text/javascript" src="/PSI.Portal.js"></script>
+
+
+
+
+	<script type="text/javascript">
+		!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+    src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+    // name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+    // ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+    // useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+    crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+    // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DO NOT ADD anything to the sdk.queue -- As they won't get called)
+    cfg: { // Application Insights Configuration
+        instrumentationKey: "98480203-b339-4624-a9ef-49f59b56be84"
+        /* ...Other Configuration Options... */
+    }});
+
+
+        appInsights.clearAuthenticatedUserContext();
+
+	</script>
+
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="exampleModalLabel">New message</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Recipient:</label>
+							<input type="text" class="form-control" id="recipient-name">
+          </div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">Message:</label>
+								<textarea class="form-control" id="message-text"></textarea>
+							</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Send message</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		//this event will update the title of the page based on active breadcrumb
+		$('.breadcrumb').ready(function () {
+			if ($('.breadcrumb').is(':visible')) {
+				document.querySelector('title').innerHTML = ($('.breadcrumb > li.active').text() + "&nbsp;· The PSI Registration Portal");
+			}
+		});
+
+		function GoToNewEditor() {
+			var editCmsUrlSegment = "EditInCms";
+			var currentUrl = window.location.href;
+			if (currentUrl.indexOf('?') > -1) {
+				var urlSegments = currentUrl.split("?");
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname + '?' + urlSegments[1];
+			}
+			else {
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname;
+			}
+		}
+	</script>
+
+
+
+
+
+	<script>
+		if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.getRegistrations().then(function(registrations) {
+					for(let registration of registrations) {
+						registration.unregister();
+					}}).catch(function(err) {
+					console.log('Service Worker unregister action failed: ', err);
+					});
+				}
+	</script>
+
+
+
+</body>
+
+</html>
+<!-- Generated at 1/5/2022 2:34:55 PM -->
+<!-- Page OK -->

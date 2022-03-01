@@ -1,0 +1,32 @@
+[
+  {
+    "Reg": 8348,
+    "Pharmacy": "Aidan Walsh Allcare Pharmacy",
+    "Address": "The Medical Hall, Main Street, Ferbane, Co Offaly",
+    "Date removed": "2021-10-23"
+  },
+  {
+    "Reg": 6893,
+    "Pharmacy": "HSQ Pharmacy",
+    "Address": "Unit 1, Block 7 Heuston South Quarter, Military Rd, Kilmainham, D 8",
+    "Date removed": "2021-12-31"
+  },
+  {
+    "Reg": 7482,
+    "Pharmacy": "Clarinbridge Pharmacy",
+    "Address": "The Bridge Centre, Clarinbridge, Co Galway",
+    "Date removed": "2022-01-13"
+  },
+  {
+    "Reg": 10000620,
+    "Pharmacy": "Gaynor's Allcare Pharmacy",
+    "Address": "Unit 2, 69 Main Street, Lough Common, Lusk, Co Dublin",
+    "Date removed": "2022-01-27"
+  },
+  {
+    "Reg": 8359,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Croom Primary Care Centre, Croom, Co Limerick",
+    "Date removed": "2022-02-01"
+  }
+]

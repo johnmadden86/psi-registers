@@ -1,0 +1,572 @@
+[
+  {
+    "Reg": 5016,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Aylesbury SC, Tallaght, d 24 ",
+    "Date removed": "2021-10-27"
+  },
+  {
+    "Reg": 5147,
+    "Pharmacy": "Allcare Pharmacy",
+    "Address": "50 Lower Dorset Street, Dublin 1",
+    "Date removed": "2021-12-29"
+  },
+  {
+    "Reg": 5175,
+    "Pharmacy": "Your Local Pharmacy",
+    "Address": "Unit 6, Supervalu Shopping Centre, Ballinteer Avenue, D 16",
+    "Date removed": "2021-06-01"
+  },
+  {
+    "Reg": 5320,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "53 William Street, Limerick, Co Limerick",
+    "Date removed": "2021-08-25"
+  },
+  {
+    "Reg": 5402,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Roxboro SC, Limerick",
+    "Date removed": "2022-01-07"
+  },
+  {
+    "Reg": 5529,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Main Street, Wicklow",
+    "Date removed": "2021-10-22"
+  },
+  {
+    "Reg": 5532,
+    "Pharmacy": "Ballymote Pharmacy",
+    "Address": "Lord Edward Street, Ballymote, Co Sligo",
+    "Date removed": "2021-12-29"
+  },
+  {
+    "Reg": 5627,
+    "Pharmacy": "Allcare Pharmacy",
+    "Address": "Boyne SC, Drogheda, Co Louth",
+    "Date removed": "2022-01-19"
+  },
+  {
+    "Reg": 5659,
+    "Pharmacy": "Mulligan's Pharmacy",
+    "Address": "Rockshire Road, Ferrybank, Waterford City, Co Waterford",
+    "Date removed": "2021-09-23"
+  },
+  {
+    "Reg": 5718,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "21 Tullow Street, Carlow Town, Co Carlow",
+    "Date removed": "2021-08-09"
+  },
+  {
+    "Reg": 5736,
+    "Pharmacy": "O'Meara's CarePlus Pharmacy",
+    "Address": "30 Upper Main Street, Arklow, Co Wicklow",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 5788,
+    "Pharmacy": "Smith's Pharmacy",
+    "Address": "Unit 3, Riverforest SC, Leixlip, Co Kildare",
+    "Date removed": "2021-11-10"
+  },
+  {
+    "Reg": 5950,
+    "Pharmacy": "Park Pharmacy",
+    "Address": "7 Tyrone Road, Lismore Park, Waterford City, Co Waterford",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 5962,
+    "Pharmacy": "The Mall Pharmacy",
+    "Address": "54 The Mall, Sligo Town, Co Sligo",
+    "Date removed": "2021-08-03"
+  },
+  {
+    "Reg": 6000,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Main Street, Blanchardstown, D ",
+    "Date removed": "2021-12-02"
+  },
+  {
+    "Reg": 6001,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Nutgrove SC, Rathfarnham, D 14",
+    "Date removed": "2021-12-23"
+  },
+  {
+    "Reg": 6014,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Laois SC, Portlaoise, Co Laois",
+    "Date removed": "2021-12-17"
+  },
+  {
+    "Reg": 6064,
+    "Pharmacy": "Mulligan's Pharmacy",
+    "Address": "12a City Square SC, Waterford City, Co Waterford",
+    "Date removed": "2021-11-17"
+  },
+  {
+    "Reg": 6110,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Unit 6-7 The Mill SC, Clondalkin, D 22",
+    "Date removed": "2021-09-02"
+  },
+  {
+    "Reg": 6112,
+    "Pharmacy": "McCauley Health & Beauty Pharmacy",
+    "Address": "Unit 11, Carlow SC, Carlow Town, Co Carlow",
+    "Date removed": "2021-10-01"
+  },
+  {
+    "Reg": 6185,
+    "Pharmacy": "Phoenix Pharmacy Dept",
+    "Address": "St Mary's Hospital, Phoenix Park, D 20",
+    "Date removed": "2021-12-08"
+  },
+  {
+    "Reg": 6210,
+    "Pharmacy": "Mulligan's Pharmacy",
+    "Address": "Market Place, Superquinn Sc, Clonmel, Co Tipperary",
+    "Date removed": "2021-11-06"
+  },
+  {
+    "Reg": 6270,
+    "Pharmacy": "Pharmacy Dept, Mayo General Hospital ",
+    "Address": "Castlebar, Co Mayo",
+    "Date removed": "2021-10-20"
+  },
+  {
+    "Reg": 6306,
+    "Pharmacy": "O'Sullivan's Pharmacy",
+    "Address": "19-20 Sarsfield Street, Limerick",
+    "Date removed": "2021-10-12"
+  },
+  {
+    "Reg": 6373,
+    "Pharmacy": "McCauley Health & Beauty Pharmacy",
+    "Address": "North Gate Medical Centre, John Street, New Ross, Co Wexford",
+    "Date removed": "2021-03-10"
+  },
+  {
+    "Reg": 6467,
+    "Pharmacy": "Burke's Pharmacy",
+    "Address": "2 Hillcrest, Kilcullen, Co Kildare",
+    "Date removed": "2021-09-16"
+  },
+  {
+    "Reg": 6505,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "1 Chaplains Place, Rowlagh, D 22",
+    "Date removed": "2021-06-23"
+  },
+  {
+    "Reg": 6543,
+    "Pharmacy": "Hickey's Pharmacy",
+    "Address": "Unit 2, Tyrrelstown Town Centre, Dublin 15",
+    "Date removed": "2021-09-03"
+  },
+  {
+    "Reg": 6624,
+    "Pharmacy": "Janet Dillon Pharmacy now Soilse Pharmacy",
+    "Address": "Moorefield Shopping Centre, Newbridge, Co Kildare",
+    "Date removed": "2017-01-09"
+  },
+  {
+    "Reg": 6740,
+    "Pharmacy": "Rathgar Pharmacy",
+    "Address": "5-7 Terenure Road East, Rathgar, D 6",
+    "Date removed": "2021-10-01"
+  },
+  {
+    "Reg": 6772,
+    "Pharmacy": "Classes Lake  Pharmacy",
+    "Address": "Unit 3, Classes Lake Retail Centre, Bridewood, Ovens, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6852,
+    "Pharmacy": "Blackpool Late Night Pharmacy",
+    "Address": "Unit 4,City Square, Watercourse Rd, Blackpool, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6893,
+    "Pharmacy": "HSQ Pharmacy",
+    "Address": "Unit 1, Block 7 Heuston South Quarter, Military Rd, Kilmainham, D 8",
+    "Date removed": "2021-12-31"
+  },
+  {
+    "Reg": 6918,
+    "Pharmacy": "Riverstick Pharmacy",
+    "Address": "Unit 24, Riverside Grove, Riverstick, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 6931,
+    "Pharmacy": "Mulligan's Pharmacy",
+    "Address": "6 Summerhill Centre, Summerhill, Tramore, Co Waterford",
+    "Date removed": "2021-12-01"
+  },
+  {
+    "Reg": 6975,
+    "Pharmacy": "Cogaslann Agatha",
+    "Address": "Carna, Co Galway",
+    "Date removed": "2021-09-04"
+  },
+  {
+    "Reg": 6977,
+    "Pharmacy": "Dan McCarthy's Pharmacy",
+    "Address": "91 Patrick Street, Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 7022,
+    "Pharmacy": "Johnston's Pharmacy",
+    "Address": "Main Street, Lanesboro, Co Longford",
+    "Date removed": "2021-10-07"
+  },
+  {
+    "Reg": 7135,
+    "Pharmacy": "Tesco",
+    "Address": "Newbridge Moorfiled, Cork Road, Newbridge, Co Kildare",
+    "Date removed": "2021-10-04"
+  },
+  {
+    "Reg": 7225,
+    "Pharmacy": "Mulligan's Pharmacy",
+    "Address": "Tesco Ballybeg, Ballybeg Link Road, Ballybeg, Co Waterford",
+    "Date removed": "2022-01-15"
+  },
+  {
+    "Reg": 7302,
+    "Pharmacy": "Reens Pharmacy",
+    "Address": "Main Street, Millstreet, Co Cork",
+    "Date removed": "2021-12-16"
+  },
+  {
+    "Reg": 7326,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "The Meath Primary Care Centre, Heytesbury Street, D 8",
+    "Date removed": "2022-01-28"
+  },
+  {
+    "Reg": 7398,
+    "Pharmacy": "Balbriggan Allcare Pharmacy",
+    "Address": "5 Drogheda Street, Balbriggan, Co Dublin",
+    "Date removed": "2021-04-21"
+  },
+  {
+    "Reg": 7440,
+    "Pharmacy": "Soilse Pharmacy Janet Dillon",
+    "Address": "Carrick on Shannon, Co Roscommon",
+    "Date removed": "2017-01-09"
+  },
+  {
+    "Reg": 7451,
+    "Pharmacy": "McCabes Pharmacy",
+    "Address": "Unit G24, The Pavillions SC, Swords, Co Dublin",
+    "Date removed": "2021-09-03"
+  },
+  {
+    "Reg": 7482,
+    "Pharmacy": "Clarinbridge Pharmacy",
+    "Address": "The Bridge Centre, Clarinbridge, Co Galway",
+    "Date removed": "2022-01-13"
+  },
+  {
+    "Reg": 7496,
+    "Pharmacy": "Chemco Pharmacy",
+    "Address": "Supervalu SC, Bunclody, Co Wexford",
+    "Date removed": "2021-10-15"
+  },
+  {
+    "Reg": 7567,
+    "Pharmacy": "McCormack's Pharmacy",
+    "Address": "Arden Road, Tullamore, Co Offaly",
+    "Date removed": "2022-01-19"
+  },
+  {
+    "Reg": 7623,
+    "Pharmacy": "Johnson Pharmacy",
+    "Address": "Supervalu SC Walkinstown, D 12",
+    "Date removed": "2022-01-17"
+  },
+  {
+    "Reg": 7689,
+    "Pharmacy": "Allcare Late Night Pharmacy Douglas",
+    "Address": "Clermont, Douglas Road, Douglas, Co Cork",
+    "Date removed": "2021-11-10"
+  },
+  {
+    "Reg": 7703,
+    "Pharmacy": "Mangan's Pharmacy",
+    "Address": "Primary Care Centre, Maynooth Rd, Celbridge, Co Kildare",
+    "Date removed": "2021-10-14"
+  },
+  {
+    "Reg": 7736,
+    "Pharmacy": "Gaffney's Allcare Pharmacy",
+    "Address": "46 Main Street, Leixlip, Co Kildare",
+    "Date removed": "2021-10-01"
+  },
+  {
+    "Reg": 7746,
+    "Pharmacy": "McHugh's Allcare Pharmacy",
+    "Address": "39 Duke Street, Athy, Co Kildare",
+    "Date removed": "2021-10-15"
+  },
+  {
+    "Reg": 7752,
+    "Pharmacy": "Cahill's Allcare Pharmacy",
+    "Address": "36 Lower Camden Street, D 2",
+    "Date removed": "2022-01-18"
+  },
+  {
+    "Reg": 7793,
+    "Pharmacy": "Pure Pharmacy",
+    "Address": "The 'Old HSE Building' Ballyfermot Rd, D 10",
+    "Date removed": "2021-11-04"
+  },
+  {
+    "Reg": 7816,
+    "Pharmacy": "Edward MacManus Pharmacy",
+    "Address": "unit 2A. Allicance Row, Ballymun, Dublin 9",
+    "Date removed": "2021-09-15"
+  },
+  {
+    "Reg": 7819,
+    "Pharmacy": "Cara Pharmacy",
+    "Address": "Unit 1, Pottery Road, Dun Laoghaire, Co Dublin",
+    "Date removed": "2022-01-01"
+  },
+  {
+    "Reg": 7850,
+    "Pharmacy": "McGorisk's Pharmacy",
+    "Address": "30 Society Street, Ballinasloe, Co Galway",
+    "Date removed": "2021-11-17"
+  },
+  {
+    "Reg": 7910,
+    "Pharmacy": "Decies Pharmacy",
+    "Address": "43 Decies Road, Ballyfermot, Dublin 10",
+    "Date removed": "2022-01-23"
+  },
+  {
+    "Reg": 7928,
+    "Pharmacy": "Hickey's Pharmacy",
+    "Address": "26 Oliver Plunkett St, Dun Laoghaire, Co Dublin",
+    "Date removed": "2021-10-07"
+  },
+  {
+    "Reg": 7938,
+    "Pharmacy": "Pure Pharmacy",
+    "Address": "11-12 Redmond Hill D 2",
+    "Date removed": "2021-12-13"
+  },
+  {
+    "Reg": 7969,
+    "Pharmacy": "Stack's Pharmacy",
+    "Address": "Unit 2, Darndale Belcamp Village Centre, Darndale, D 17",
+    "Date removed": "2021-10-29"
+  },
+  {
+    "Reg": 7986,
+    "Pharmacy": "Allcare Pharmacy",
+    "Address": "knightsbridge Nursing Home, Trim, Co Meath",
+    "Date removed": "2021-10-12"
+  },
+  {
+    "Reg": 8018,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Castle Street, Bray, Co Wicklow",
+    "Date removed": "2021-10-22"
+  },
+  {
+    "Reg": 8022,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Main Street, Baltinglass, Co Wicklow",
+    "Date removed": "2022-01-03"
+  },
+  {
+    "Reg": 8026,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Wellington Bridge, Wellington, Co Wexford",
+    "Date removed": "2021-08-03"
+  },
+  {
+    "Reg": 8028,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "83 Main Street, Carrick on Suir, Co Tipperary",
+    "Date removed": "2021-10-29"
+  },
+  {
+    "Reg": 8056,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Kilmallock Business Park, Kilmallock, Co Limeric k",
+    "Date removed": "2021-09-10"
+  },
+  {
+    "Reg": 8059,
+    "Pharmacy": "Thomas Court Pharmacy",
+    "Address": "St Catherine's Lane West, Thomas Court Primary Care Centre, D 8",
+    "Date removed": "2022-01-31"
+  },
+  {
+    "Reg": 8087,
+    "Pharmacy": "Boots",
+    "Address": "61 Lower Main Street, Letterkenny, Co Donegal",
+    "Date removed": "2021-11-30"
+  },
+  {
+    "Reg": 8091,
+    "Pharmacy": "Boots",
+    "Address": "Unit 18-19, Harbour Place SC, Mullingar, Co Westmeath",
+    "Date removed": "2021-11-30"
+  },
+  {
+    "Reg": 8102,
+    "Pharmacy": "Boots",
+    "Address": "Unit 3-4 North Mall, Navan SC, Navan, Co Meath",
+    "Date removed": "2022-01-30"
+  },
+  {
+    "Reg": 8106,
+    "Pharmacy": "Boots",
+    "Address": "Unit 3, Carrick on Shannon SC, Carrick on Shannon, Co Leitrim",
+    "Date removed": "2021-11-30"
+  },
+  {
+    "Reg": 8114,
+    "Pharmacy": "Boots",
+    "Address": "Unit 8, Letterkenny Retail Park, Paddy Harte Rd, Letterkenny, Co Donegal",
+    "Date removed": "2021-12-04"
+  },
+  {
+    "Reg": 8138,
+    "Pharmacy": "Boots",
+    "Address": "Mahon Point SC, Cork City, Co Cork",
+    "Date removed": "2021-07-31"
+  },
+  {
+    "Reg": 8144,
+    "Pharmacy": "Boots",
+    "Address": "Ilac SC, Dublin ",
+    "Date removed": "2021-12-04"
+  },
+  {
+    "Reg": 8154,
+    "Pharmacy": "Boots",
+    "Address": "1 Church Street, Tullamore, Co Offaly",
+    "Date removed": "2021-12-15"
+  },
+  {
+    "Reg": 8198,
+    "Pharmacy": "McCarthy's Pharmacy",
+    "Address": "The Arlington Centre, Link Road,, Droughill, Portarlington, Co Laois",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8201,
+    "Pharmacy": "Pure Pharmacy",
+    "Address": "Unit 1A, Whitehall Close, Terenure, D6W",
+    "Date removed": "2021-10-06"
+  },
+  {
+    "Reg": 8224,
+    "Pharmacy": "McCarthy's Pharmacy",
+    "Address": "Unit 1, Castle Court, Carrigtwohill, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8274,
+    "Pharmacy": "Boots",
+    "Address": "Unit 13, Gateway Retail Park, Knocknacarra, Co Galway",
+    "Date removed": "2021-11-08"
+  },
+  {
+    "Reg": 8280,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Cahir Primary Care Centre, Cahir, Co Tipperary",
+    "Date removed": "2021-09-10"
+  },
+  {
+    "Reg": 8317,
+    "Pharmacy": "Mangan's Pharmacy Rialto",
+    "Address": "Rialto Primary Care Centre, 383 South Circular Rd, D 8",
+    "Date removed": "2021-12-31"
+  },
+  {
+    "Reg": 8329,
+    "Pharmacy": "Old Quarter Pharmacy Ltd",
+    "Address": "Ballincollig, Co Cork",
+    "Date removed": "2021-09-29"
+  },
+  {
+    "Reg": 8339,
+    "Pharmacy": "Quigley's Pharmacy",
+    "Address": "3 Leopardstown Gardens, Stillorgan, Co Dublin",
+    "Date removed": "2021-09-01"
+  },
+  {
+    "Reg": 8343,
+    "Pharmacy": "Aidan Walsh Allcare Pharmacy",
+    "Address": "The Medical Hall, Main Street, Ferbane, Co Offaly",
+    "Date removed": "2021-10-23"
+  },
+  {
+    "Reg": 8350,
+    "Pharmacy": "Cara Pharmacy",
+    "Address": "Bundoran, Co Donegal",
+    "Date removed": "2021-11-17"
+  },
+  {
+    "Reg": 8352,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Units 120-121, The Sq SCTallaght, D 24",
+    "Date removed": "2021-12-09"
+  },
+  {
+    "Reg": 8354,
+    "Pharmacy": "Lloyds Pharmacy",
+    "Address": "Unit 1 Hazelmere SC, Hazelmere, Naas, Co Kildare",
+    "Date removed": "2021-11-19"
+  },
+  {
+    "Reg": 8359,
+    "Pharmacy": "Zest Pharmacy",
+    "Address": "Croom Primary Care Centre, Croom, Co Limerick",
+    "Date removed": "2022-02-01"
+  },
+  {
+    "Reg": 8383,
+    "Pharmacy": "Pure Pharmacy",
+    "Address": "28 Shop Street, Lagavoreen, Drogheda, Co Louth",
+    "Date removed": "2022-02-01"
+  },
+  {
+    "Reg": 10000620,
+    "Pharmacy": "Gaynor's Allcare Pharmacy",
+    "Address": "Unit 2, 69 Main Street, Lough Common, Lusk, Co Dublin",
+    "Date removed": "2022-01-27"
+  },
+  {
+    "Reg": "5194",
+    "Pharmacy": "LloydsPharmacy",
+    "Address": "Main Street, Shankill, Co Dublin",
+    "Date removed": "29/11/2021"
+  },
+  {
+    "Reg": "6116",
+    "Pharmacy": "LloydsPharmacy",
+    "Address": "Grove Island SC, Limerick",
+    "Date removed": "29/11/2021"
+  },
+  {
+    "Reg": "6193",
+    "Pharmacy": "LloydsPharmacy",
+    "Address": "Castlecourt SC, Castleknock, D15",
+    "Date removed": "25/11/2021"
+  }
+]
