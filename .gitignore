@@ -900,3 +900,9 @@ pip-selfcheck.json
 .gitignore
 .idea/
 /api-keys.json
+/GP_GMS_contracts.xls
+/gms-contracts.csv
+/gms-contracts.json/
+/geocoding.py
+/data/
+/ge2016/
